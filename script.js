@@ -81,8 +81,8 @@ const removeErrorsFor = (input) =>{
         errorIcon.classList.remove('error-icon');
     }
 
-    if (formControl.classList.contains('incorrect')){
-        formControl.classList.remove('incorrect');
+    if (input.classList.contains('incorrect')){
+        input.classList.remove('incorrect');
     }
 };
 
