@@ -60,6 +60,16 @@ const isMail = (email) =>{
  };
 
 //  Removing errors
+const inputsToValidate = [firstname_input, lastname_input, email_input, password_input];
+
+const addRemovalListeners = (inputs) =>{
+    inputs.forEach(input =>{
+        input.addEventListener('input', ()=>{
+            removeErrorsFor(input)
+        });
+    });
+};
+
 
 
 
