@@ -74,11 +74,15 @@ const addRemovalListeners = (inputs) =>{
 const removeErrorsFor = (input) =>{
     const formControl = input.parentElement;
     const errorMessage = formControl.querySelector('#error-message');
-    errorMessage.innerText = "";
+    errorMessage.innerText = ""; 
 
     const errorIcon = formControl.querySelector('svg');
     if(errorIcon.classList.contains('error-icon')){
         errorIcon.classList.remove('error-icon');
+    }
+
+    if (formControl.classList.contains('incorrect')){
+        formControl.classList.remove('incorrect');
     }
 };
 
